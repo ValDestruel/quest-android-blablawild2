@@ -2,10 +2,6 @@ package fr.wildcodeschool.blablawild2;
 
 import java.util.Date;
 
-/**
- * Created by bastienwcs on 15/04/18.
- */
-
 public class ItineraryModel {
 
     private String departure;
@@ -20,6 +16,9 @@ public class ItineraryModel {
         this.driver = driver;
         this.date = date;
         this.price = price;
+    }
+
+    public ItineraryModel() {
     }
 
     public String getDeparture() {
