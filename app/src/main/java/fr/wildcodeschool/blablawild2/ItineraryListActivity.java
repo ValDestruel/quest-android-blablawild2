@@ -36,8 +36,8 @@ public class ItineraryListActivity extends AppCompatActivity {
         listItineraries.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(), listItineraries, new RecyclerTouchListener.ClickListener() {
             @Override
             public void onClick(View view, int position) {
-                ItineraryModel itineraryModel = itineraryModels.get(position);
-                Toast.makeText(ItineraryListActivity.this,itineraryModel.getDriver(), Toast.LENGTH_SHORT).show();
+                ItineraryModel driver = itineraryModels.get(position);
+                Toast.makeText(ItineraryListActivity.this,driver.getDriver(), Toast.LENGTH_SHORT).show();
             }
 
             @Override
